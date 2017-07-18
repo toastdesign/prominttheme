@@ -1,51 +1,19 @@
 .main-wrap {
-  @include grid-row();
-  margin-top: 1rem;
-
+  position:relative;
+  
   @include breakpoint(medium) {
-    margin-top: 3rem;
-  }
-}
+    padding-top:rem-calc(40);
 
-.main-content {
-
-  // default 2 column
-  @include grid-column(12);
-  @include breakpoint(medium) {
-    @include grid-column(8);
-  }
-
-  // 1 column
-  .full-width.main-wrap & {
-    @include breakpoint(medium) {
-      @include grid-column(12);
-    }
-  }
-
-  // 2 column sidebar left
-  .sidebar-left.main-wrap & {
-    @include breakpoint(medium) {
-      @include grid-column(8);
-      @include grid-col-pos(4);
-    }
-  }
-}
-
-.sidebar {
-
-  // default 2 column
-  @include grid-column(12);
-  @include breakpoint(medium) {
-    @include grid-column(4);
-    margin-top: 1rem;
-  }
-
-  // 2 column sidebar left
-  .sidebar-left.main-wrap & {
-    @include breakpoint(medium) {
-      @include grid-column(4);
-      @include grid-col-pos(-8);
-      margin-top: 1rem;
+    // Grey top 
+    &:after {
+      content:'';
+      display: block;
+      position:absolute;
+      z-index:-1;
+      top: 0;
+      height:rem-calc(90);
+      width:100%;
+      background-color:#DDD;
     }
   }
 }

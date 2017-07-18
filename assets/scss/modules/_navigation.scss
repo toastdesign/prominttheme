@@ -9,7 +9,7 @@
   &.menu-item:hover,
   &.current-menu-item {
     a {
-      color:#DF3127;
+      color:$brand-red;
     }
   }
 }
@@ -201,4 +201,19 @@
 
 .nav-next {
   float:right;
+}
+
+
+.sub-menu {
+  background-color:blue;
+  margin-bottom:rem-calc(70);
+  li {
+    a {
+      color:#B9B9B9;
+
+      &.active {
+        color:#202020;
+      }
+    }
+  }
 }

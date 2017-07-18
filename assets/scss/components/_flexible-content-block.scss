@@ -1,0 +1,59 @@
+.flexible-content-block {
+    margin-bottom:rem-calc(40);
+    
+    @include breakpoint(medium) {
+        margin-bottom:rem-calc(50);
+    }
+}
+
+//--------------------------------------------------------------
+// Wysiwyg Block
+//--------------------------------------------------------------
+.flexible-content-block--wysiwyg {
+    p {
+        &:last-child{
+            margin-bottom:0;
+        }
+    }
+
+    a {
+        color:$brand-red;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    // If there is more then 1 column
+    .row {
+        .columns {
+            margin-bottom:rem-calc(32);
+            &:last-child{
+                margin-bottom:0;
+            }
+        }
+    }
+}
+
+//--------------------------------------------------------------
+// Seperator Block
+//--------------------------------------------------------------
+.flexible-content-block--seperator {
+    
+    .seperator {
+        width:rem-calc(110);
+        border-color:$brand-red;
+        margin:rem-calc(10) auto rem-calc(50);
+        
+        @include breakpoint(medium) {
+            margin:rem-calc(64) auto rem-calc(90);
+        }
+    }
+}
+
+//--------------------------------------------------------------
+// Gallery Block
+//--------------------------------------------------------------
+.flexible-content-block--gallery {
+
+}

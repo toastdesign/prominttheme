@@ -47,7 +47,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1080);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #1779ba,
@@ -61,6 +61,9 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
+
+$brand-red:#DF3128;
+
 $body-background: $white;
 $body-font-color: $black;
 
@@ -100,7 +103,7 @@ $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
   small: 20px,
-  medium: 30px,
+  medium: 20px,
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -116,20 +119,22 @@ $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': 24, 'line-height': 1.2, 'margin-top': 0, 'margin-bottom': rem-calc(21)),
+    'h2': ('font-size': 23, 'line-height': 1.2, 'margin-top': 0, 'margin-bottom': rem-calc(20)),
+    'h3': ('font-size': 19, 'line-height': 1.2, 'margin-top': 0, 'margin-bottom': rem-calc(5)),
+    'h4': ('font-size': 16, 'line-height': 1.2, 'margin-top': 0, 'margin-bottom': rem-calc(5)),
+    'h5': ('font-size': 15, 'line-height': 1.2, 'margin-top': 0, 'margin-bottom': rem-calc(5)),
+    'h6': ('font-size': 13, 'line-height': 1.2, 'margin-top': 0, 'margin-bottom': rem-calc(5)),
+    'p' : ('font-size': 15, 'line-height': 1.8, 'margin-top': 0, 'margin-bottom': rem-calc(30)),
   ),
   medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
-    'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': 31, 'line-height': 1.2, 'margin-top': 0, 'margin-bottom': rem-calc(25)),
+    'h2': ('font-size': 31, 'line-height': 1.2, 'margin-top': 0, 'margin-bottom': rem-calc(24)),
+    'h3': ('font-size': 21, 'line-height': 1.2, 'margin-top': 0, 'margin-bottom': rem-calc(5)),
+    'h4': ('font-size': 19, 'line-height': 1.2, 'margin-top': 0, 'margin-bottom': rem-calc(5)),
+    'h5': ('font-size': 16, 'line-height': 1.2, 'margin-top': 0, 'margin-bottom': rem-calc(5)),
+    'h6': ('font-size': 14, 'line-height': 1.2, 'margin-top': 0, 'margin-bottom': rem-calc(5)),
+    'p' : ('font-size': 16, 'line-height': 1.8, 'margin-top': 0, 'margin-bottom': rem-calc(32)),
   ),
 );
 $header-text-rendering: optimizeLegibility;
