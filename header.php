@@ -21,30 +21,43 @@
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
-	<header class="site-header" role="banner">
-		<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle() ?>>
-			<div class="title-bar-left">
-				<button class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
-				<span class="site-mobile-title title-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-				</span>
-			</div>
-		</div>
-		<nav class="site-navigation top-bar" role="navigation">
-			<div class="top-bar-left">
-				<div class="site-desktop-title top-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+	<div data-sticky-container>
+
+		<header class="site-header sticky" role="banner"  data-sticky  data-sticky-on="small" data-options="marginTop:0;" style="width:100%">
+			
+			<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle() ?>>
+				
+				<div class="flex-container align-middle align-justify">
+								
+					<div class="site-mobile-title title-bar-title columns">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="site-logo" src="<?php bloginfo('template_url'); ?>/assets/images/logo.svg" alt="<?php bloginfo( 'name' ); ?>"><span class="sr-only"><?php bloginfo( 'name' ); ?></span></a>
+					</div>
+					
+					<div class="columns shrink">
+						<button id="hamburger-btn" class="hamburger hamburger--squeeze" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+					</div>
+					
 				</div>
 			</div>
-			<div class="top-bar-right">
-				<?php foundationpress_top_bar_r(); ?>
-
-				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
+			
+			<nav class="site-navigation top-bar" role="navigation">
+				
+				<div class="top-bar-left">
+					<div class="site-desktop-title top-bar-title">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					</div>
+				</div>
+				
+				<div class="top-bar-right">
+					<?php foundationpress_top_bar_r(); ?>
 					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
-				<?php endif; ?>
-			</div>
-		</nav>
-	</header>
+				</div>
+
+			</nav>
+
+		</header>
+
+	</div>
 
 	<section class="container">
 		<?php do_action( 'foundationpress_after_header' );

@@ -5437,8 +5437,8 @@ html.is-reveal-open body {
     position: fixed; }
 
 .title-bar {
-  padding: 0.5rem;
-  background: #e6e6e6;
+  padding: 0.9375rem 0;
+  background: white;
   color: #0a0a0a; }
   .title-bar::before, .title-bar::after {
     display: table;
@@ -5470,7 +5470,7 @@ html.is-reveal-open body {
     clear: both; }
   .top-bar,
   .top-bar ul {
-    background-color: #e6e6e6; }
+    background-color: white; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
@@ -5764,6 +5764,9 @@ html.is-reveal-open body {
   My custom styles:
   Add your scss files below to structure your project styles
 */
+body {
+  background-color: blue; }
+
 @media print, screen and (min-width: 40em) {
   .mobile-menu,
   .site-title-bar {
@@ -5780,6 +5783,9 @@ html.is-reveal-open body {
 .mobile-menu {
   display: none; }
 
+.site-logo {
+  height: 3.125rem; }
+
 .mobile-menu .is-accordion-submenu-parent > a::after,
 .mobile-off-canvas-menu .is-accordion-submenu-parent > a::after {
   border-color: #1779ba transparent transparent; }
@@ -5787,6 +5793,20 @@ html.is-reveal-open body {
 .mobile-menu .is-accordion-submenu-parent.active > a::after,
 .mobile-off-canvas-menu .is-accordion-submenu-parent.active > a::after {
   border-color: #fefefe transparent transparent; }
+
+.mobile-menu ul,
+.mobile-off-canvas-menu ul {
+  text-align: center;
+  border-top: 1px solid #EEE; }
+  .mobile-menu ul li,
+  .mobile-off-canvas-menu ul li {
+    border-bottom: 1px solid #EEE; }
+    .mobile-menu ul li a,
+    .mobile-off-canvas-menu ul li a {
+      font-size: 0.8125rem;
+      text-transform: uppercase;
+      color: #202020;
+      padding: 1.1875rem 0 1.125rem; }
 
 .mobile-menu .current_page_item > a,
 .mobile-off-canvas-menu .current_page_item > a {
@@ -5950,6 +5970,99 @@ body#tinymce {
   height: auto;
   max-width: 75rem;
   padding: 1.25rem !important; }
+
+.hamburger {
+  padding: 0px 0px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition-property: opacity, -webkit-filter;
+  transition-property: opacity, -webkit-filter;
+  transition-property: opacity, filter;
+  transition-property: opacity, filter, -webkit-filter;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  margin-top: 6px;
+  overflow: visible; }
+  .hamburger:hover {
+    -webkit-filter: opacity(50%);
+            filter: opacity(50%); }
+
+.hamburger-box {
+  width: 20px;
+  height: 18px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -1px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    border-radius: 0px;
+    position: absolute;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+    -webkit-transition-timing-function: ease;
+            transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -8px; }
+  .hamburger-inner::after {
+    bottom: -8px; }
+
+.hamburger--squeeze .hamburger-inner {
+  -webkit-transition-duration: 0.075s;
+          transition-duration: 0.075s;
+  -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  .hamburger--squeeze .hamburger-inner::before {
+    -webkit-transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+    transition: top 0.075s 0.12s ease, opacity 0.075s ease; }
+  .hamburger--squeeze .hamburger-inner::after {
+    -webkit-transition: bottom 0.075s 0.12s ease, -webkit-transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: bottom 0.075s 0.12s ease, -webkit-transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.hamburger--squeeze.is-active .hamburger-inner {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition-delay: 0.12s;
+          transition-delay: 0.12s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .hamburger--squeeze.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    -webkit-transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+    transition: top 0.075s ease, opacity 0.075s 0.12s ease; }
+  .hamburger--squeeze.is-active .hamburger-inner::after {
+    bottom: 0;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transition: bottom 0.075s ease, -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: bottom 0.075s ease, -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
 .sites-button {
   background: #FF6908;
