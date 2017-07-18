@@ -11,6 +11,9 @@
 
 if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	function foundationpress_scripts() {
+	
+	// Enqueue google fonts https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Varela+Round
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Varela+Round', array(), '1', 'all' );
 
 	// Enqueue the main Stylesheet.
 	wp_enqueue_style( 'main-stylesheet', get_template_directory_uri() . '/assets/stylesheets/foundation.css', array(), '2.9.2', 'all' );

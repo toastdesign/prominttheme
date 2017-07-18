@@ -41,18 +41,18 @@
 			</div>
 			
 			<nav class="site-navigation top-bar" role="navigation">
-				
-				<div class="top-bar-left">
-					<div class="site-desktop-title top-bar-title">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				<div class="row flex-container align-middle align-justify">
+					<div class="top-bar-left columns ">
+						<div class="site-desktop-title top-bar-title">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="site-logo" src="<?php bloginfo('template_url'); ?>/assets/images/logo.svg" alt="<?php bloginfo( 'name' ); ?>"><span class="sr-only"><?php bloginfo( 'name' ); ?></span></a>
+						</div>
+					</div>
+					
+					<div class="top-bar-right columns shrink">
+						<?php foundationpress_top_bar_r(); ?>
+						<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
 					</div>
 				</div>
-				
-				<div class="top-bar-right">
-					<?php foundationpress_top_bar_r(); ?>
-					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
-				</div>
-
 			</nav>
 
 		</header>

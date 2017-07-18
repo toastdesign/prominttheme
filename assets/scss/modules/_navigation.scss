@@ -1,6 +1,18 @@
-body {
-  background-color:blue;
+//--------------------------------------------------------------
+// Global menu link styles
+//--------------------------------------------------------------
+.mobile-menu .current_page_item,
+.mobile-menu .menu-item,
+.desktop-menu.menu > li {
+  &.menu-item:hover,
+  &.current-menu-item {
+    a {
+      color:#DF3127;
+    }
+  }
 }
+
+
 
 // Navigation breakpoints
 .mobile-menu,
@@ -33,9 +45,9 @@ body {
   height:rem-calc(50);
 }
 
-
 .mobile-menu,
 .mobile-off-canvas-menu {
+  font-family:$header-font-family;
 
   // submenu arrow
   .is-accordion-submenu-parent {
@@ -76,6 +88,7 @@ body {
 
 // Tablet and desktop menu
 .desktop-menu {
+  font-family:$header-font-family;
 
   // submenu arrow
   li.is-dropdown-submenu-parent {
@@ -86,6 +99,17 @@ body {
       border-color: $menu-item-color-active transparent transparent;
     }
   }
+
+  &.menu > li > a {
+    color:#202020;
+    text-transform:uppercase;
+    font-size:rem-calc(15);
+    padding:rem-calc(10);
+  }
+
+  &.menu > li:last-child a {
+    padding-right:0;
+  }
 }
 
 .site-navigation {
@@ -94,7 +118,17 @@ body {
   }
 }
 
-
+//--------------------------------------------------------------
+// Collapse top bar right on mobile
+//--------------------------------------------------------------
+.top-bar-right {
+  @include breakpoint(small down) {
+    &.columns {
+      padding-left:0;
+      padding-right:0;
+    }
+  }
+}
 
 // WP post navigation
 .post-navigation {
