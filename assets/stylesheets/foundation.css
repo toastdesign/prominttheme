@@ -5712,6 +5712,35 @@ html.is-reveal-open body {
     padding-left: 0;
     padding-right: 0; } }
 
+.footer-menu li a {
+  color: #202020;
+  padding: 0.625rem 0;
+  font-size: 0.875rem; }
+  @media print, screen and (min-width: 40em) {
+    .footer-menu li a {
+      padding: 0.625rem;
+      font-size: 0.875rem; } }
+
+.footer-menu li:first-child a {
+  padding-left: 0; }
+
+.footer-menu li:last-child a {
+  padding-right: 0; }
+
+.footer-menu__uppercase {
+  text-transform: uppercase; }
+  .footer-menu__uppercase li a {
+    font-size: 0.8125rem; }
+
+@media print, screen and (min-width: 40em) {
+  .footer-menu__seperated li {
+    border-right: 1px solid #AAAAAA; }
+    .footer-menu__seperated li:last-child {
+      border: 0; }
+    .footer-menu__seperated li a {
+      padding-top: 0;
+      padding-bottom: 0; } }
+
 .post-navigation::before, .post-navigation::after {
   display: table;
   content: ' '; }
