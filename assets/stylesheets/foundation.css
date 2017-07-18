@@ -5637,7 +5637,11 @@ html.is-reveal-open body {
   My custom styles:
   Add your scss files below to structure your project styles
 */
-.mobile-menu .current_page_item.menu-item:hover a, .mobile-menu .current_page_item.current-menu-item a,
+.footer-menu .current_page_item.menu-item:hover a, .footer-menu .current_page_item.current-menu-item a,
+.footer-menu.menu > li.menu-item:hover a,
+.footer-menu.menu > li.current-menu-item a,
+.mobile-menu .current_page_item.menu-item:hover a,
+.mobile-menu .current_page_item.current-menu-item a,
 .mobile-menu .menu-item.menu-item:hover a,
 .mobile-menu .menu-item.current-menu-item a,
 .desktop-menu.menu > li.menu-item:hover a,
@@ -5734,7 +5738,7 @@ html.is-reveal-open body {
 
 @media print, screen and (min-width: 40em) {
   .footer-menu__seperated li {
-    border-right: 1px solid #AAAAAA; }
+    border-right: 1px solid #AAA; }
     .footer-menu__seperated li:last-child {
       border: 0; }
     .footer-menu__seperated li a {
@@ -5863,27 +5867,32 @@ html.is-reveal-open body {
       .sidebar-left.main-wrap .sidebar:last-child:not(:first-child) {
         float: right; } }
 
-.footer-container {
-  max-width: 100%;
-  width: 100%;
-  margin: 0 auto;
-  border-top: 1px solid #cacaca;
-  margin-top: 3.75rem; }
-
 .footer {
-  max-width: 75rem;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 1.875rem 0; }
-  .footer::before, .footer::after {
-    display: table;
-    content: ' '; }
-  .footer::after {
-    clear: both; }
-  .footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0; }
+  background-color: #EEE;
+  padding: 2.75rem 0 2.4375rem; }
+  @media print, screen and (min-width: 40em) {
+    .footer {
+      padding: 3.625rem 0 3.3125rem; } }
+
+.copyright {
+  padding: 2.75rem 0 2.4375rem;
+  color: #aaa;
+  font-size: 0.8125rem; }
+  @media print, screen and (min-width: 40em) {
+    .copyright {
+      padding: 3.625rem 0 3.3125rem; } }
+  @media print, screen and (min-width: 40em) {
+    .copyright .row {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+  .copyright a {
+    color: inherit; }
+    .copyright a:hover {
+      text-decoration: underline; }
 
 body#tinymce {
   height: auto;

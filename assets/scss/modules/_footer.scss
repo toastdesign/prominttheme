@@ -1,18 +1,39 @@
 .footer-container {
-  max-width: 100%;
-  width: 100%;
-  margin: 0 auto;
-  border-top: 1px solid $medium-gray;
-  margin-top: rem-calc(60);
+  
 }
 
 .footer {
-  @include grid-row();
-  padding: rem-calc(30) 0;
+  background-color:#EEE;
+  padding:rem-calc(44 0 39);
+  
+  @include breakpoint(medium) {
+     padding:rem-calc(58 0 53);
+  }
+}
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+//--------------------------------------------------------------
+// Copyright
+//--------------------------------------------------------------
+.copyright {
+  padding:rem-calc(44 0 39);
+  color:#aaa;
+  font-size:rem-calc(13);
+
+  @include breakpoint(medium) {
+     padding:rem-calc(58 0 53);
+  }
+
+  .row {
+    @include breakpoint(medium) {
+      @include flex-align(center, middle);
+    }
+  }
+
+  a {
+    color:inherit;
+    
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
