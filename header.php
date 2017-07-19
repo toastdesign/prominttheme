@@ -23,7 +23,7 @@
 
 	<div data-sticky-container>
 
-		<header id="main-nav-header" class="site-header sticky" role="banner"  data-sticky  data-sticky-on="small" data-options="marginTop:0;" style="width:100%">
+		<header id="main-nav-header" class="site-header sticky" role="banner"  data-sticky  data-sticky-on="small" data-options="marginTop:0;" style="width:100%; ">
 			
 			<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle() ?>>
 				

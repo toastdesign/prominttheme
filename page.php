@@ -31,45 +31,12 @@
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<!-- Magellan menu-->
-		<?php if ( have_rows( 'add_content' ) ) : ?>
-			
-
-
-					<ul class="sub-menu menu align-center" data-magellan >
-					
-					<?php while ( have_rows('add_content' ) ) : the_row(); ?>
-				
-						<?php if ( get_row_layout() == 'wysiwyg_block' ) : ?>
-							
-							<?php if ( get_sub_field('subnavigation') ) : ?>
-								<li><a href="#<?php the_sub_field( 'subnavigation_link_text' ); ?>"><?php the_sub_field( 'subnavigation_link_text' ); ?></a></li>
-							<?php endif; ?>
-								
-						<?php endif; ?>
-
-					<?php endwhile; ?>
-					
-					</ul>
-
-
-				
-		<?php endif; ?>
-		<!-- End Magellan Menu -->
-		
+		</div>		
 		
 		<?php if ( have_rows( 'add_content' ) ) : ?>
 			<?php while ( have_rows('add_content' ) ) : the_row(); ?>
 				
 				<?php if ( get_row_layout() == 'wysiwyg_block' ) : ?>
-
-					<?php if ( get_sub_field('subnavigation') ) : ?>
-						<?php if ( get_sub_field('subnavigation_link_text') ) : ?>
-							<span id="<?php echo get_sub_field('subnavigation_link_text'); ?>" data-magellan-target="<?php echo get_sub_field('subnavigation_link_text'); ?>"></span>
-						<?php endif; ?>
-					<?php endif; ?>
 					
 					<div class="row align-center">
 						

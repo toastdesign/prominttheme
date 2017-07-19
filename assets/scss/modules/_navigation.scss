@@ -204,15 +204,51 @@
 }
 
 
+
+//--------------------------------------------------------------
+// Page sub menu
+//--------------------------------------------------------------
+.magellan-sub-menu {
+  
+}
+
 .sub-menu {
-  background-color:blue;
-  margin-bottom:rem-calc(70);
+  border-top:1px solid;
+  border-bottom:1px solid;
+  
   li {
+    display:inline-block;
+    color:#B9B9B9;
+    
     a {
+      font-family:$header-font-family;
       color:#B9B9B9;
+      display:inline-block;
+      padding:rem-calc(10 10);
 
       &.active {
         color:#202020;
+      }
+    }
+
+    &:after {
+      content:'-';
+    }
+
+    &:first-child {
+      a {
+        padding-left:0;
+      }
+    }
+
+    &:last-child {
+
+      &:after {
+        content:'';
+      }
+
+      a {
+         padding-right:0;
       }
     }
   }

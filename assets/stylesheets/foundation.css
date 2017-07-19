@@ -5788,12 +5788,26 @@ html.is-reveal-open body {
   float: right; }
 
 .sub-menu {
-  background-color: blue;
-  margin-bottom: 4.375rem; }
-  .sub-menu li a {
+  border-top: 1px solid;
+  border-bottom: 1px solid; }
+  .sub-menu li {
+    display: inline-block;
     color: #B9B9B9; }
-    .sub-menu li a.active {
-      color: #202020; }
+    .sub-menu li a {
+      font-family: "Varela Round", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      color: #B9B9B9;
+      display: inline-block;
+      padding: 0.625rem 0.625rem; }
+      .sub-menu li a.active {
+        color: #202020; }
+    .sub-menu li:after {
+      content: '-'; }
+    .sub-menu li:first-child a {
+      padding-left: 0; }
+    .sub-menu li:last-child:after {
+      content: ''; }
+    .sub-menu li:last-child a {
+      padding-right: 0; }
 
 .main-wrap {
   position: relative; }
