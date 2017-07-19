@@ -16,4 +16,36 @@
       background-color:#DDD;
     }
   }
+
+  &--no-image {
+    padding-top:rem-calc(100);
+
+    // Grey top 
+    &:after {
+      content:'';
+      display: block;
+      position:absolute;
+      z-index:-1;
+      top: 0;
+      height:rem-calc(60);
+      width:100%;
+      background-color:#DDD;
+    }
+    
+    @include breakpoint(medium){
+      padding-top:rem-calc(190);
+
+      // Grey top 
+      &:after {
+        content:'';
+        display: block;
+        position:absolute;
+        z-index:-1;
+        top: 0;
+        height:rem-calc(90);
+        width:100%;
+        background-color:#DDD;
+      }
+    }
+  }
 }

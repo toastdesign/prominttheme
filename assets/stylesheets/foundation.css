@@ -5823,6 +5823,29 @@ html.is-reveal-open body {
         height: 5.625rem;
         width: 100%;
         background-color: #DDD; } }
+  .main-wrap--no-image {
+    padding-top: 6.25rem; }
+    .main-wrap--no-image:after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      height: 3.75rem;
+      width: 100%;
+      background-color: #DDD; }
+    @media print, screen and (min-width: 40em) {
+      .main-wrap--no-image {
+        padding-top: 11.875rem; }
+        .main-wrap--no-image:after {
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          height: 5.625rem;
+          width: 100%;
+          background-color: #DDD; } }
 
 .footer {
   background-color: #EEE;
@@ -6280,5 +6303,26 @@ body#tinymce {
   @media print, screen and (min-width: 40em) {
     .flexible-content-block--seperator .seperator {
       margin: 4rem auto 5.625rem; } }
+
+.flexible-content-block--thema {
+  margin-bottom: 4.375rem;
+  margin-top: 1.875rem; }
+  @media print, screen and (min-width: 40em) {
+    .flexible-content-block--thema {
+      margin-bottom: 5rem;
+      margin-top: 3.75rem; } }
+
+.project-thema {
+  position: relative; }
+  .project-thema__title {
+    background-color: rgba(223, 49, 40, 0.8);
+    color: white;
+    text-align: center;
+    height: 3.4375rem;
+    line-height: 3.4375rem;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 3.125rem;
+    right: 3.125rem; }
 
 /*# sourceMappingURL=foundation.css.map */

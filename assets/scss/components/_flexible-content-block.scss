@@ -85,8 +85,34 @@
 }
 
 //--------------------------------------------------------------
-// Gallery Block
+// Project Thema Block
 //--------------------------------------------------------------
-.flexible-content-block--gallery {
+.flexible-content-block--thema {
 
+    margin-bottom:rem-calc(70);
+    
+    margin-top:rem-calc(30);
+    
+    @include breakpoint(medium) {
+        margin-bottom:rem-calc(80);
+
+        margin-top:rem-calc(60);
+    }
+
+}
+// Project thema itself
+.project-thema {
+    position:relative;
+
+    &__title {
+        background-color:rgba($brand-red,0.8);
+        color:white;
+        text-align: center;
+        height:rem-calc(55);
+        line-height:rem-calc(55);
+        position:absolute;
+        bottom:rem-calc(40);
+        left:rem-calc(50);
+        right:rem-calc(50);
+    }
 }
