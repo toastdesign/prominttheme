@@ -5851,6 +5851,11 @@ html.is-reveal-open body {
     @media print, screen and (min-width: 40em) {
       .main-wrap--padding-bottom {
         padding-bottom: 11.875rem; } }
+  .main-wrap--background-image {
+    background-position: top center;
+    background-repeat: no-repeat;
+    z-index: -2;
+    background-attachment: fixed; }
 
 .footer {
   background-color: #EEE;
@@ -6340,6 +6345,16 @@ body#tinymce {
     bottom: 2.5rem;
     left: 3.125rem;
     right: 3.125rem; }
+
+.flexible-content-block--referenties .referentie-header {
+  margin-bottom: 1.875rem; }
+
+.flexible-content-block--referenties .referentie-image {
+  width: 1.625rem; }
+
+.flexible-content-block--referenties .referentie-country {
+  font-family: "Varela Round", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.3125rem; }
 
 .contact-info__title {
   font-size: 1.3125rem;

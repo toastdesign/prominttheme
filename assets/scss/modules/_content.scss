@@ -56,4 +56,11 @@
       padding-bottom:rem-calc(190);
     }
   }
+
+  &--background-image {
+    background-position:top center;
+    background-repeat:no-repeat;
+    z-index:-2;
+    background-attachment: fixed;
+  }
 }

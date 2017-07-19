@@ -116,3 +116,20 @@
         right:rem-calc(50);
     }
 }
+
+//--------------------------------------------------------------
+// Referentie block
+//--------------------------------------------------------------
+.flexible-content-block--referenties {
+    .referentie-header {
+        margin-bottom:rem-calc(30);
+    }
+
+    .referentie-image {
+        width:rem-calc(26);
+    }
+    .referentie-country {
+        font-family:$header-font-family;
+        font-size:rem-calc(21);
+    }
+}
