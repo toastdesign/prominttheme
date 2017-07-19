@@ -1,0 +1,29 @@
+//--------------------------------------------------------------
+// Contact info
+//--------------------------------------------------------------
+.contact-info {
+    &__title {
+        font-size:rem-calc(21);
+        margin-top:rem-calc(12);
+        margin-bottom:rem-calc(27);
+    }
+
+    &__contact-links {
+        
+    }
+
+    &__contact-link {
+        display:block;
+        color:$brand-red;
+    }
+}
+
+//--------------------------------------------------------------
+// Contact form wrapper
+//--------------------------------------------------------------
+.contact-form-wrapper {
+
+    &__title {
+        margin-bottom:rem-calc(27);
+    }
+}

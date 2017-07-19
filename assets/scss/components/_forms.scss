@@ -1,0 +1,18 @@
+//--------------------------------------------------------------
+// CF7 form styling
+//--------------------------------------------------------------
+.wpcf7{
+
+    br {
+        display:none;
+    }
+
+    input[type='submit'] {
+        background-color:$brand-red;
+        border:0;
+        color:white;
+        font-size:rem-calc(17);
+        padding:rem-calc(13 40 13 39);
+        border-radius:rem-calc(50);
+    }
+}

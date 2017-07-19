@@ -48,4 +48,12 @@
       }
     }
   }
+
+  &--padding-bottom {
+    padding-bottom:rem-calc(100);
+
+    @include breakpoint(medium){
+      padding-bottom:rem-calc(190);
+    }
+  }
 }
