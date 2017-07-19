@@ -6257,6 +6257,22 @@ body#tinymce {
   .flexible-content-block--wysiwyg .row .columns:last-child {
     margin-bottom: 0; }
 
+.flexible-content-block--project-links p {
+  font-family: "Varela Round", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  margin-bottom: 0.9375rem; }
+  .flexible-content-block--project-links p:last-child {
+    margin-bottom: 0; }
+
+.flexible-content-block--project-links a {
+  color: #0a0a0a; }
+  .flexible-content-block--project-links a:hover {
+    text-decoration: underline; }
+
+.flexible-content-block--project-links .row .columns {
+  margin-bottom: 2rem; }
+  .flexible-content-block--project-links .row .columns:last-child {
+    margin-bottom: 0; }
+
 .flexible-content-block--seperator .seperator {
   width: 6.875rem;
   border-color: #DF3128;

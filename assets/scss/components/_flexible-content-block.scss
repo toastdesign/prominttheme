@@ -36,6 +36,39 @@
 }
 
 //--------------------------------------------------------------
+// Project Links Block
+//--------------------------------------------------------------
+.flexible-content-block--project-links {
+    p {
+        font-family:$header-font-family;
+        margin-bottom:rem-calc(15);
+        
+        &:last-child{
+            margin-bottom:0;
+        }
+    }
+
+    a {
+        color:$body-font-color;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    // If there is more then 1 column
+    .row {
+        .columns {
+            margin-bottom:rem-calc(32);
+            &:last-child{
+                margin-bottom:0;
+            }
+        }
+    }
+}
+
+
+//--------------------------------------------------------------
 // Seperator Block
 //--------------------------------------------------------------
 .flexible-content-block--seperator {
