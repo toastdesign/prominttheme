@@ -1,0 +1,152 @@
+//--------------------------------------------------------------
+// Intro block
+//--------------------------------------------------------------
+.fp-intro {
+    background-color:$brand-red;
+    color:white;
+    padding:rem-calc(50);
+    position:relative;
+    z-index:1;
+    
+    @include breakpoint(medium) {
+        margin-top:rem-calc(-110);
+        margin-bottom:rem-calc(36);
+    }
+
+    &__title {
+
+    }
+
+    &__content {
+
+    }
+
+    &__text {
+        padding:rem-calc(15 0 15 0);
+
+        @include breakpoint(medium) {
+            padding:rem-calc(15 40 15 0);
+        }
+
+        p {
+            margin-bottom:0;
+
+            a {
+                color:inherit;
+                text-decoration:underline;
+            }
+        }
+    }
+
+    &__contact-box {
+        padding:rem-calc(16 0 0 0);
+        white-space: nowrap;
+       
+        @include breakpoint(medium) {
+            border-left:1px solid rgba(white,0.3);
+            padding:rem-calc(15 0 15 40);
+        }
+
+        p {
+            margin-bottom:0;
+        }
+    }
+
+    &__contact-link {
+        display:block;
+        color:white;
+    }
+}
+
+//--------------------------------------------------------------
+// Fp about
+//--------------------------------------------------------------
+.fp-about {
+    
+    @include breakpoint(medium) {
+        text-align:center;
+        margin-top:rem-calc(16);
+        margin-bottom:rem-calc(76);
+    }
+
+    p {
+
+        @include breakpoint(medium) {
+            font-size:rem-calc(17);
+        }
+    }
+}
+
+//--------------------------------------------------------------
+// Services
+//--------------------------------------------------------------
+.service {
+    background-color:#eee;
+    padding:rem-calc(40 20);
+
+    @include breakpoint(medium) {
+        min-height:200px; 
+    }
+
+    &--odd {
+        background-color:#DDD;
+    }
+
+    &__inner {
+        max-width:rem-calc(480);
+    }
+
+    &__title {
+        margin-bottom:rem-calc(12);
+        font-size:rem-calc(19);
+        
+        @include breakpoint(medium) {
+            margin-bottom:rem-calc(20);
+            font-size:rem-calc(27);
+        }
+
+    }
+
+    &__text {
+        margin-bottom:0;
+    }
+
+}
+
+//--------------------------------------------------------------
+// Quote
+//--------------------------------------------------------------
+.flexible-content-block--quote{
+    .quote {
+        font-family: $header-font-family;
+        line-height:2;
+        font-size:rem-calc(17);
+
+        @include breakpoint(medium) {
+            text-align:center;
+            font-size:rem-calc(21);
+        }
+    }
+}
+
+//--------------------------------------------------------------
+// Referenties
+//--------------------------------------------------------------
+.testimonials {
+    
+    padding-top:rem-calc(90);
+    padding-bottom:rem-calc(90);
+
+    .testimonial {
+        
+        &__quote {
+            font-family: $header-font-family;
+            font-style:italic;
+        }
+
+        &__quoter {
+            color:#ddd;
+        }
+    }
+
+}

@@ -4,101 +4,251 @@ Template Name: Front
 */
 get_header(); ?>
 
-<header class="front-hero" role="banner">
-	<div class="marketing">
-		<div class="tagline">
-			<h1><?php bloginfo( 'name' ); ?></h1>
-			<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
-			<a role="button" class="download large button sites-button hide-for-small-only" href="https://github.com/olefredrik/foundationpress">Download FoundationPress</a>
-		</div>
+<header class="site-header">
 
-		<div class="watch">
-			<section class="stargazers">
-				<a href="https://github.com/olefredrik/foundationpress">1.5k stargazers</a>
-			</section>
-			<section class="twitter">
-				<a href="https://twitter.com/olefredrik">@olefredrik</a>
-			</section>
+	<?php if ( have_rows('slides') ) : ?>
+	<div class="orbit orbit--front-page" role="region" aria-label="Favorite Space Pictures" data-orbit>
+			<div class="orbit-wrapper">
+			<div class="orbit-controls">
+				<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><span class="fa fa-angle-left fa-2x"></span></button>
+				<button class="orbit-next"><span class="show-for-sr">Next Slide</span><span class="fa fa-angle-right fa-2x"></span></button>
+			</div>
+			<ul class="orbit-container">
+			<?php while( have_rows('slides') ) : the_row(); ?>
+				<li class="orbit-slide" style="background-image:url(<?php the_sub_field('slide'); ?>);"></li>
+			<?php endwhile; ?>
+			</ul>
 		</div>
 	</div>
+	<?php endif; ?>
 
 </header>
 
-<?php do_action( 'foundationpress_before_content' ); ?>
-<?php while ( have_posts() ) : the_post(); ?>
-<section class="intro" role="main">
-	<div class="fp-intro">
+<div class="row small-collapse medium-uncollapse">
+	<div class="columns">
 
-		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
-			<div class="entry-content">
-				<?php the_content(); ?>
-			</div>
-			<footer>
-				<?php
-					wp_link_pages(
-						array(
-							'before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ),
-							'after'  => '</p></nav>',
-						)
-					);
-				?>
-				<p><?php the_tags(); ?></p>
-			</footer>
-			<?php do_action( 'foundationpress_page_before_comments' ); ?>
-			<?php comments_template(); ?>
-			<?php do_action( 'foundationpress_page_after_comments' ); ?>
+		<div class="fp-intro">
+
+			<?php if ( have_rows('intro') ) : ?>
+			
+				<?php while( have_rows('intro') ) : the_row(); ?>
+			
+					<div class="fp-intro__title">
+						<h1><?php the_sub_field('intro_titel'); ?></h1>
+					</div>
+					<div class="fp-intro__content flex-container flex-dir-column medium-flex-dir-row">
+						<div class="fp-intro__text flex-child-shrink">
+							<?php the_sub_field('intro_tekst'); ?>
+						</div>
+						<div class="fp-intro__contact-box flex-child-auto">
+							<p>
+							<a href="/" class="fp-intro__contact-link"><?php the_sub_field('intro_contact_mail'); ?></a>
+							<a href="/" class="fp-intro__contact-link"><?php the_sub_field('intro_contact_telefoon'); ?></a>
+							<a href="<?php the_sub_field('intro_contact_contact_link'); ?>" class="fp-intro__contact-link">contact opnemen</a>
+							</p>
+						</div>
+					</div>
+					
+			
+				<?php endwhile; ?>
+			
+			<?php endif; ?>
+			
 		</div>
 
 	</div>
+</div>
 
-</section>
-<?php endwhile;?>
-<?php do_action( 'foundationpress_after_content' ); ?>
+<div class="row">
+	<div class="columns">
 
-<div class="section-divider">
-	<hr />
+		<div class="flexible-content-block flexible-content-block--seperator">
+			<hr class="seperator">
+		</div>
+
+	</div>
+</div>
+
+<div class="row">
+	<div class="columns">
+
+		<div class="fp-about">
+			
+			<?php if ( have_rows('about') ) : ?>
+			
+				<?php while( have_rows('about') ) : the_row(); ?>
+					<h2><?php the_sub_field('about_titel'); ?></h2>
+					<?php the_sub_field('about_tekst'); ?>
+			
+				<?php endwhile; ?>
+			
+			<?php endif; ?>
+			
+		</div>
+
+	</div>
+</div>
+
+<div class="site-services">
+
+	<div class="row expanded collapse">
+
+		
+		<?php if ( have_rows('diensten') ) : ?>
+		
+			<?php while( have_rows('diensten') ) : the_row(); ?>
+				<div class="columns small-12 medium-6">
+
+					<div class="service flex-container align-center align-middle">
+						<div class="service__inner">
+							<h3 class="service__title"><?php the_sub_field('dienst_titel'); ?></h3>
+							<div class="service__text"><?php the_sub_field('dienst_tekst'); ?></div>
+						</div>
+					</div>
+
+				</div>
+				
+			<?php endwhile; ?>
+		
+		<?php endif; ?>
+
+	</div>
+</div>
+
+<div class="row">
+	<div class="columns">
+
+		<div class="flexible-content-block flexible-content-block--seperator">
+			<hr class="seperator">
+		</div>
+
+	</div>
+</div>
+
+<div class="row">
+	<div class="columns">
+		
+		<div class="flexible-content-block flexible-content-block--quote">
+			<p class="quote"><?php the_field('quote'); ?></p>
+		</div>
+
+	</div>
 </div>
 
 
-<section class="benefits">
-	<header>
-		<h2>Build Foundation based sites, powered by WordPress</h2>
-		<h4>Foundation is the professional choice for designers, developers and teams. <br /> WordPress is by far, <a href="http://trends.builtwith.com/cms">the world's most popular CMS</a> (currently powering 38% of the web).</h4>
-	</header>
+<div class="row">
+	<div class="columns">
 
-	<div class="semantic">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demo/semantic.svg" alt="semantic">
-		<h3>Semantic</h3>
-		<p>Everything is semantic. You can have the cleanest markup without sacrificing the utility and speed of Foundation.</p>
-	</div>
-
-	<div class="responsive">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demo/responsive.svg" alt="responsive">
-		<h3>Responsive</h3>
-		<p>You can build for small devices first. Then, as devices get larger and larger, layer in more complexity for a complete responsive design.</p>
+		<div class="flexible-content-block flexible-content-block--seperator">
+			<hr class="seperator">
+		</div>
 
 	</div>
+</div>
 
-	<div class="customizable">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demo/customizable.svg" alt="customizable">
-		<h3>Customizable</h3>
-		<p>You can customize your build to include or remove certain elements, as well as define the size of columns, colors, font size and more.</p>
+
+
+<div class="fp-projecten">
+	
+	
+	<?php if ( have_rows('projecten') ) : ?>
+	
+		<?php while( have_rows('projecten') ) : the_row(); ?>
+			<div class="row">
+				<div class="columns">
+					<h2><?php the_sub_field('projecten_titel'); ?></h2>
+					<?php the_sub_field('projecten_tekst'); ?>
+				</div>
+			</div>
+
+			<?php 
+
+			$posts = get_sub_field('projecten');
+
+			if( $posts ): ?>
+				<div class="row expanded collapse">
+				<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+					<?php setup_postdata($post); ?>
+					<div class="columns small-12 medium-4">
+						<div class="project-thema">
+							<a href="<?php the_permalink(); ?>">
+								<div class="project-thema__image-wrapper">
+									<?php 
+
+									$image = get_field('thema_image');
+									$size = 'large'; 
+
+									if( $image ) {
+
+										echo wp_get_attachment_image( $image, $size );
+
+									}
+
+									?>
+								</div>
+								<div class="project-thema__title"><?php the_title(); ?></div>
+							</a>
+						</div>
+					</div>
+				<?php endforeach; ?>
+				</div>
+				<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+			<?php endif; ?>
+	
+		<?php endwhile; ?>
+	
+	<?php endif; ?>
+	
+</div>
+
+
+<div class="row">
+	<div class="columns">
+
+		
+
+	<?php if ( have_rows('testimonials') ) : ?>
+		
+		<?php while( have_rows('testimonials') ) : the_row(); ?>
+		
+		<div class="testimonials" style="background-image:url(<?php the_sub_field('testimonials_background_image'); ?>);">
+			
+			<h2 class="testimonials__title"><?php the_sub_field('testimonials_titel'); ?></h2>
+			
+			<?php if ( have_rows('testimonial') ) : ?>
+				<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+					<div class="orbit-wrapper">
+						<div class="orbit-controls">
+							<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+							<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+						</div>
+						
+						<ul class="orbit-container">
+						<?php while( have_rows('testimonial') ) : the_row(); ?>
+							<li class="is-active orbit-slide">
+								<div class="testimonial">
+									<p class="testimonial__quote"><?php the_sub_field('testimonial_tekst'); ?></p>
+									<p class="testimonial__quoter"><?php the_sub_field('testimonial_auteur'); ?></p>
+								</div>
+							</li>							
+						<?php endwhile; ?>
+						</ul>
+					</div>
+				</div>
+			<?php endif; ?>	
+
+			<a href="<?php the_sub_field('testimonial_pagina_link'); ?>" class="testimonials__more-link">Alle referenties</a>
+
+		</div>	
+
+		<?php endwhile; ?>
+		
+	<?php endif; ?>
+
+		
 
 	</div>
-
-	<div class="professional">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demo/professional.svg" alt="professional">
-		<h3>Professional</h3>
-		<p>Millions of designers and developers depend on Foundation. We have business support, training and consulting to help grow your product or service.</p>
-	</div>
-
-	<div class="why-foundation">
-		<a href="/kitchen-sink">See what's in Foundation out of the box →</a>
-	</div>
-
-</section>
-
+</div>
 
 
 <?php get_footer();

@@ -1,8 +1,29 @@
 .flexible-content-block {
     margin-bottom:rem-calc(40);
-    
-    @include breakpoint(medium) {
-        margin-bottom:rem-calc(50);
+
+    // Margin-top
+    &--margin-top {
+        margin-top:rem-calc(30);
+    }
+
+    // no-margin-bottom
+    &--no-margin-bottom {
+        margin-bottom:0;
+    }
+
+    // no-margin-top
+    &--no-margin-top {
+        margin-top:0!important;
+    }
+
+    // background-color
+    &--background-color-grey {
+        background-color:#eee;
+    }
+
+    // Padded block
+    &--padded-block {
+        padding:rem-calc(90 0);
     }
 }
 
@@ -33,6 +54,8 @@
             }
         }
     }
+
+    
 }
 
 //--------------------------------------------------------------
@@ -99,7 +122,14 @@
         margin-top:rem-calc(60);
     }
 
+    // no margin-top
+    &--no-margin-top {
+        margin-top:0;
+    }
+
 }
+
+
 // Project thema itself
 .project-thema {
     position:relative;
