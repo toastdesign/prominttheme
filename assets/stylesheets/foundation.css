@@ -2906,8 +2906,8 @@ pre {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap; }
   .row .row {
-    margin-right: -0.625rem;
-    margin-left: -0.625rem; }
+    margin-right: -1.25rem;
+    margin-left: -1.25rem; }
     @media print, screen and (min-width: 40em) {
       .row .row {
         margin-right: -0.625rem;
@@ -2939,8 +2939,8 @@ pre {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
           flex: 1 1 0px;
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
   min-width: initial; }
   @media print, screen and (min-width: 40em) {
     .column, .columns {
@@ -3216,8 +3216,8 @@ pre {
   padding-left: 0; }
 
 .small-uncollapse > .column, .small-uncollapse > .columns {
-  padding-right: 0.625rem;
-  padding-left: 0.625rem; }
+  padding-right: 1.25rem;
+  padding-left: 1.25rem; }
 
 @media print, screen and (min-width: 40em) {
   .medium-1 {
@@ -3690,7 +3690,7 @@ pre {
   max-width: 100%; }
 
 .column-block {
-  margin-bottom: 1.25rem; }
+  margin-bottom: 2.5rem; }
   .column-block > :last-child {
     margin-bottom: 0; }
   @media print, screen and (min-width: 40em) {
@@ -6458,6 +6458,9 @@ html.is-reveal-open body {
 .desktop-menu.menu > li.current-menu-item a {
   color: #DF3128; }
 
+.site-header.sticky.is-stuck {
+  z-index: 99999; }
+
 @media print, screen and (min-width: 40em) {
   .mobile-menu,
   .site-title-bar {
@@ -6812,8 +6815,8 @@ body#tinymce {
     .gallery.gallery-columns-1 > .gallery-item:last-child {
       float: left; }
   .gallery.gallery-columns-2 {
-    margin-right: -0.625rem;
-    margin-left: -0.625rem; } }
+    margin-right: -1.25rem;
+    margin-left: -1.25rem; } }
   @media print, screen and (min-width: 40em) and (min-width: 40em) {
     .gallery.gallery-columns-2 {
       margin-right: -0.625rem;
@@ -6827,8 +6830,8 @@ body#tinymce {
     .gallery.gallery-columns-2 > .gallery-item {
       float: left;
       width: 50%;
-      padding-right: 0.625rem;
-      padding-left: 0.625rem; } }
+      padding-right: 1.25rem;
+      padding-left: 1.25rem; } }
     @media print, screen and (min-width: 40em) and (min-width: 40em) {
       .gallery.gallery-columns-2 > .gallery-item {
         padding-right: 0.625rem;
@@ -6842,8 +6845,8 @@ body#tinymce {
       .gallery.gallery-columns-2 > .gallery-item:last-child {
         float: left; }
   .gallery.gallery-columns-3 {
-    margin-right: -0.625rem;
-    margin-left: -0.625rem; } }
+    margin-right: -1.25rem;
+    margin-left: -1.25rem; } }
   @media print, screen and (min-width: 40em) and (min-width: 40em) {
     .gallery.gallery-columns-3 {
       margin-right: -0.625rem;
@@ -6857,8 +6860,8 @@ body#tinymce {
     .gallery.gallery-columns-3 > .gallery-item {
       float: left;
       width: 33.33333%;
-      padding-right: 0.625rem;
-      padding-left: 0.625rem; } }
+      padding-right: 1.25rem;
+      padding-left: 1.25rem; } }
     @media print, screen and (min-width: 40em) and (min-width: 40em) {
       .gallery.gallery-columns-3 > .gallery-item {
         padding-right: 0.625rem;
@@ -6872,8 +6875,8 @@ body#tinymce {
       .gallery.gallery-columns-3 > .gallery-item:last-child {
         float: left; }
   .gallery.gallery-columns-4 {
-    margin-right: -0.625rem;
-    margin-left: -0.625rem; } }
+    margin-right: -1.25rem;
+    margin-left: -1.25rem; } }
   @media print, screen and (min-width: 40em) and (min-width: 40em) {
     .gallery.gallery-columns-4 {
       margin-right: -0.625rem;
@@ -6887,8 +6890,8 @@ body#tinymce {
     .gallery.gallery-columns-4 > .gallery-item {
       float: left;
       width: 25%;
-      padding-right: 0.625rem;
-      padding-left: 0.625rem; } }
+      padding-right: 1.25rem;
+      padding-left: 1.25rem; } }
     @media print, screen and (min-width: 40em) and (min-width: 40em) {
       .gallery.gallery-columns-4 > .gallery-item {
         padding-right: 0.625rem;
@@ -6902,8 +6905,8 @@ body#tinymce {
       .gallery.gallery-columns-4 > .gallery-item:last-child {
         float: left; }
   .gallery.gallery-columns-5 {
-    margin-right: -0.625rem;
-    margin-left: -0.625rem; } }
+    margin-right: -1.25rem;
+    margin-left: -1.25rem; } }
   @media print, screen and (min-width: 40em) and (min-width: 40em) {
     .gallery.gallery-columns-5 {
       margin-right: -0.625rem;
@@ -6917,8 +6920,8 @@ body#tinymce {
     .gallery.gallery-columns-5 > .gallery-item {
       float: left;
       width: 20%;
-      padding-right: 0.625rem;
-      padding-left: 0.625rem; } }
+      padding-right: 1.25rem;
+      padding-left: 1.25rem; } }
     @media print, screen and (min-width: 40em) and (min-width: 40em) {
       .gallery.gallery-columns-5 > .gallery-item {
         padding-right: 0.625rem;
@@ -6932,8 +6935,8 @@ body#tinymce {
       .gallery.gallery-columns-5 > .gallery-item:last-child {
         float: left; }
   .gallery.gallery-columns-6 {
-    margin-right: -0.625rem;
-    margin-left: -0.625rem; } }
+    margin-right: -1.25rem;
+    margin-left: -1.25rem; } }
   @media print, screen and (min-width: 40em) and (min-width: 40em) {
     .gallery.gallery-columns-6 {
       margin-right: -0.625rem;
@@ -6947,8 +6950,8 @@ body#tinymce {
     .gallery.gallery-columns-6 > .gallery-item {
       float: left;
       width: 16.66667%;
-      padding-right: 0.625rem;
-      padding-left: 0.625rem; } }
+      padding-right: 1.25rem;
+      padding-left: 1.25rem; } }
     @media print, screen and (min-width: 40em) and (min-width: 40em) {
       .gallery.gallery-columns-6 > .gallery-item {
         padding-right: 0.625rem;
@@ -6962,8 +6965,8 @@ body#tinymce {
       .gallery.gallery-columns-6 > .gallery-item:last-child {
         float: left; }
   .gallery.gallery-columns-7 {
-    margin-right: -0.625rem;
-    margin-left: -0.625rem; } }
+    margin-right: -1.25rem;
+    margin-left: -1.25rem; } }
   @media print, screen and (min-width: 40em) and (min-width: 40em) {
     .gallery.gallery-columns-7 {
       margin-right: -0.625rem;
@@ -6977,8 +6980,8 @@ body#tinymce {
     .gallery.gallery-columns-7 > .gallery-item {
       float: left;
       width: 14.28571%;
-      padding-right: 0.625rem;
-      padding-left: 0.625rem; } }
+      padding-right: 1.25rem;
+      padding-left: 1.25rem; } }
     @media print, screen and (min-width: 40em) and (min-width: 40em) {
       .gallery.gallery-columns-7 > .gallery-item {
         padding-right: 0.625rem;
@@ -6992,8 +6995,8 @@ body#tinymce {
       .gallery.gallery-columns-7 > .gallery-item:last-child {
         float: left; }
   .gallery.gallery-columns-8 {
-    margin-right: -0.625rem;
-    margin-left: -0.625rem; } }
+    margin-right: -1.25rem;
+    margin-left: -1.25rem; } }
   @media print, screen and (min-width: 40em) and (min-width: 40em) {
     .gallery.gallery-columns-8 {
       margin-right: -0.625rem;
@@ -7007,8 +7010,8 @@ body#tinymce {
     .gallery.gallery-columns-8 > .gallery-item {
       float: left;
       width: 12.5%;
-      padding-right: 0.625rem;
-      padding-left: 0.625rem; } }
+      padding-right: 1.25rem;
+      padding-left: 1.25rem; } }
     @media print, screen and (min-width: 40em) and (min-width: 40em) {
       .gallery.gallery-columns-8 > .gallery-item {
         padding-right: 0.625rem;
@@ -7022,8 +7025,8 @@ body#tinymce {
       .gallery.gallery-columns-8 > .gallery-item:last-child {
         float: left; }
   .gallery.gallery-columns-9 {
-    margin-right: -0.625rem;
-    margin-left: -0.625rem; } }
+    margin-right: -1.25rem;
+    margin-left: -1.25rem; } }
   @media print, screen and (min-width: 40em) and (min-width: 40em) {
     .gallery.gallery-columns-9 {
       margin-right: -0.625rem;
@@ -7037,8 +7040,8 @@ body#tinymce {
     .gallery.gallery-columns-9 > .gallery-item {
       float: left;
       width: 11.11111%;
-      padding-right: 0.625rem;
-      padding-left: 0.625rem; } }
+      padding-right: 1.25rem;
+      padding-left: 1.25rem; } }
     @media print, screen and (min-width: 40em) and (min-width: 40em) {
       .gallery.gallery-columns-9 > .gallery-item {
         padding-right: 0.625rem;
@@ -7135,6 +7138,8 @@ body#tinymce {
     bottom: 2.5rem;
     left: 3.125rem;
     right: 3.125rem; }
+  .project-thema__image-wrapper img {
+    width: 100%; }
 
 .flexible-content-block--referenties .referentie-header {
   margin-bottom: 1.875rem; }
@@ -7187,15 +7192,36 @@ body#tinymce {
     left: 1.25rem; }
     .orbit .orbit-controls .orbit-previous .fa {
       margin-left: -5px; }
+  .orbit--buttons-under .orbit-controls {
+    display: block;
+    text-align: center;
+    margin-bottom: 2.8125rem; }
+    @media print, screen and (min-width: 40em) {
+      .orbit--buttons-under .orbit-controls {
+        margin-bottom: 5.3125rem; } }
+    .orbit--buttons-under .orbit-controls .orbit-previous,
+    .orbit--buttons-under .orbit-controls .orbit-next {
+      display: inline-block;
+      position: static;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none;
+      color: #0a0a0a;
+      background-color: transparent; }
+      .orbit--buttons-under .orbit-controls .orbit-previous:hover,
+      .orbit--buttons-under .orbit-controls .orbit-next:hover {
+        background-color: transparent; }
 
 .fp-intro {
   background-color: #DF3128;
   color: white;
-  padding: 3.125rem;
+  padding: 3.125rem 1.25rem;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  margin-bottom: 2.25rem; }
   @media print, screen and (min-width: 40em) {
     .fp-intro {
+      padding: 3.125rem;
       margin-top: -6.875rem;
       margin-bottom: 2.25rem; } }
   .fp-intro__text {
@@ -7231,14 +7257,24 @@ body#tinymce {
   .fp-about p {
     font-size: 1.0625rem; } }
 
+.site-services {
+  margin-bottom: 2.25rem; }
+  .site-services .columns:nth-child(1) .service, .site-services .columns:nth-child(3) .service {
+    background-color: #DDDDDD; }
+  .site-services .columns:nth-child(2) .service, .site-services .columns:nth-child(4) .service {
+    background-color: #eee; }
+  @media print, screen and (min-width: 40em) {
+    .site-services .columns:nth-child(1) .service, .site-services .columns:nth-child(4) .service {
+      background-color: #DDDDDD; }
+    .site-services .columns:nth-child(2) .service, .site-services .columns:nth-child(3) .service {
+      background-color: #eee; } }
+
 .service {
   background-color: #eee;
   padding: 2.5rem 1.25rem; }
   @media print, screen and (min-width: 40em) {
     .service {
       min-height: 200px; } }
-  .service--odd {
-    background-color: #DDD; }
   .service__inner {
     max-width: 30rem; }
   .service__title {
@@ -7260,14 +7296,65 @@ body#tinymce {
       text-align: center;
       font-size: 1.3125rem; } }
 
+@media print, screen and (min-width: 40em) {
+  .fp-projecten {
+    background-color: #EEE; }
+    .fp-projecten p {
+      margin-bottom: 0; } }
+
+@media print, screen and (min-width: 40em) {
+  .fp-projecten__intro {
+    text-align: center;
+    padding-top: 6.25rem;
+    padding-bottom: 5.625rem; } }
+
 .testimonials {
+  background-position: top center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
   padding-top: 5.625rem;
   padding-bottom: 5.625rem; }
+  @media print, screen and (min-width: 40em) {
+    .testimonials {
+      padding-top: 9.375rem;
+      padding-bottom: 10.3125rem; } }
+  .testimonials__title {
+    margin-bottom: 1.875rem; }
+    @media print, screen and (min-width: 40em) {
+      .testimonials__title {
+        text-align: center;
+        margin-bottom: 3.75rem; } }
   .testimonials .testimonial__quote {
     font-family: "Varela Round", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    font-style: italic; }
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 1rem; }
+    @media print, screen and (min-width: 40em) {
+      .testimonials .testimonial__quote {
+        font-size: 1.3125rem;
+        margin-bottom: 2rem; } }
   .testimonials .testimonial__quoter {
-    color: #ddd; }
+    color: #868686;
+    font-size: 0.875rem; }
+    @media print, screen and (min-width: 40em) {
+      .testimonials .testimonial__quoter {
+        font-size: 1rem; } }
+  @media print, screen and (min-width: 40em) {
+    .testimonials .testimonial {
+      text-align: center; } }
+  .testimonials__more-link {
+    color: #DF3128;
+    font-family: "Varela Round", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 0.9375rem; }
+    @media print, screen and (min-width: 40em) {
+      .testimonials__more-link {
+        text-align: center;
+        display: block;
+        font-size: 1rem; } }
+    .testimonials__more-link:hover {
+      color: #DF3128;
+      text-decoration: underline; }
 
 .contact-info__title {
   font-size: 1.3125rem;

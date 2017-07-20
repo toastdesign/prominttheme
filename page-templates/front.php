@@ -150,14 +150,15 @@ get_header(); ?>
 
 <div class="fp-projecten">
 	
-	
 	<?php if ( have_rows('projecten') ) : ?>
 	
 		<?php while( have_rows('projecten') ) : the_row(); ?>
 			<div class="row">
 				<div class="columns">
-					<h2><?php the_sub_field('projecten_titel'); ?></h2>
-					<?php the_sub_field('projecten_tekst'); ?>
+					<div class="fp-projecten__intro">
+						<h2><?php the_sub_field('projecten_titel'); ?></h2>
+						<?php the_sub_field('projecten_tekst'); ?>
+					</div>
 				</div>
 			</div>
 
@@ -176,7 +177,7 @@ get_header(); ?>
 									<?php 
 
 									$image = get_field('thema_image');
-									$size = 'large'; 
+									$size = 'project-thema'; 
 
 									if( $image ) {
 
@@ -205,8 +206,6 @@ get_header(); ?>
 <div class="row">
 	<div class="columns">
 
-		
-
 	<?php if ( have_rows('testimonials') ) : ?>
 		
 		<?php while( have_rows('testimonials') ) : the_row(); ?>
@@ -216,13 +215,8 @@ get_header(); ?>
 			<h2 class="testimonials__title"><?php the_sub_field('testimonials_titel'); ?></h2>
 			
 			<?php if ( have_rows('testimonial') ) : ?>
-				<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-					<div class="orbit-wrapper">
-						<div class="orbit-controls">
-							<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-							<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-						</div>
-						
+				<div class="orbit orbit--buttons-under" role="region" aria-label="Favorite Space Pictures" data-orbit>
+					<div class="orbit-wrapper">						
 						<ul class="orbit-container">
 						<?php while( have_rows('testimonial') ) : the_row(); ?>
 							<li class="is-active orbit-slide">
@@ -233,6 +227,10 @@ get_header(); ?>
 							</li>							
 						<?php endwhile; ?>
 						</ul>
+						<div class="orbit-controls">
+							<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><span class="fa fa-angle-left fa-2x"></span></button>
+							<button class="orbit-next"><span class="show-for-sr">Next Slide</span><span class="fa fa-angle-right fa-2x"></span></button>
+						</div>
 					</div>
 				</div>
 			<?php endif; ?>	
@@ -244,8 +242,6 @@ get_header(); ?>
 		<?php endwhile; ?>
 		
 	<?php endif; ?>
-
-		
 
 	</div>
 </div>

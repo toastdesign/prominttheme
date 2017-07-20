@@ -4,11 +4,13 @@
 .fp-intro {
     background-color:$brand-red;
     color:white;
-    padding:rem-calc(50);
+    padding:rem-calc(50 20);
     position:relative;
     z-index:1;
+    margin-bottom:rem-calc(36);
     
     @include breakpoint(medium) {
+        padding:rem-calc(50);
         margin-top:rem-calc(-110);
         margin-bottom:rem-calc(36);
     }
@@ -80,16 +82,46 @@
 //--------------------------------------------------------------
 // Services
 //--------------------------------------------------------------
+.site-services {
+    margin-bottom:rem-calc(36);
+   
+    .columns {
+        &:nth-child(1),
+        &:nth-child(3) {
+            .service {
+                background-color:#DDDDDD;
+            }
+        }
+        &:nth-child(2),
+        &:nth-child(4) {
+            .service {
+                background-color:#eee;
+            }
+        }
+        @include breakpoint(medium) {
+            &:nth-child(1),
+            &:nth-child(4) {
+                .service {
+                    background-color:#DDDDDD;
+                }
+            }
+            &:nth-child(2),
+            &:nth-child(3) {
+                .service {
+                    background-color:#eee;
+                }
+            }
+        }
+    }
+}
+
+
 .service {
     background-color:#eee;
     padding:rem-calc(40 20);
 
     @include breakpoint(medium) {
         min-height:200px; 
-    }
-
-    &--odd {
-        background-color:#DDD;
     }
 
     &__inner {
@@ -110,7 +142,6 @@
     &__text {
         margin-bottom:0;
     }
-
 }
 
 //--------------------------------------------------------------
@@ -130,22 +161,93 @@
 }
 
 //--------------------------------------------------------------
+// Projecten
+//--------------------------------------------------------------
+.fp-projecten {
+    
+    @include breakpoint(medium) {
+        background-color:#EEE;
+
+        p {
+            margin-bottom:0;
+        }
+    }
+
+    &__intro {
+        
+        @include breakpoint(medium) {
+            text-align: center;
+            padding-top:rem-calc(100);
+            padding-bottom:rem-calc(90);
+        }
+    }
+}
+
+
+//--------------------------------------------------------------
 // Referenties
 //--------------------------------------------------------------
 .testimonials {
-    
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size:contain;
     padding-top:rem-calc(90);
     padding-bottom:rem-calc(90);
+
+    @include breakpoint(medium) {
+        padding-top:rem-calc(150);
+        padding-bottom:rem-calc(165);
+    }
+
+    &__title {
+        margin-bottom:rem-calc(30);
+        @include breakpoint(medium) {
+            text-align: center;
+            margin-bottom:rem-calc(60);
+        }
+    }
 
     .testimonial {
         
         &__quote {
             font-family: $header-font-family;
             font-style:italic;
+            font-size:rem-calc(16);
+            margin-bottom:rem-calc(16);
+
+            @include breakpoint(medium) {
+                font-size:rem-calc(21);
+                margin-bottom:rem-calc(32);
+            }
         }
 
         &__quoter {
-            color:#ddd;
+            color:#868686;
+            font-size:rem-calc(14);
+            @include breakpoint(medium) {
+                font-size:rem-calc(16);
+            }
+        }
+
+        @include breakpoint(medium) {
+            text-align:center;
+        }
+    }
+
+    &__more-link {
+        color:$brand-red;
+        font-family: $header-font-family;
+        font-size:rem-calc(15);
+       
+        @include breakpoint(medium) {
+            text-align: center;
+            display: block;
+            font-size:rem-calc(16);
+        }
+
+        &:hover {
+            color:$brand-red;
+            text-decoration: underline;
         }
     }
 

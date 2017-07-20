@@ -75,7 +75,7 @@ get_header(); ?>
                                                 <?php 
 
                                                 $image = get_field('thema_image');
-                                                $size = 'large'; 
+                                                $size = 'project-thema'; 
 
                                                 if( $image ) {
 

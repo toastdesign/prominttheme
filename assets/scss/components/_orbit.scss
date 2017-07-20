@@ -61,4 +61,31 @@
             }
         }
     }
+
+
+    // Buttons under
+    &--buttons-under {
+        
+        .orbit-controls {
+            display:block;
+            text-align: center;
+            margin-bottom:rem-calc(45);
+            @include breakpoint(medium) {
+                margin-bottom:rem-calc(85);
+            }
+            
+            .orbit-previous,
+            .orbit-next {
+                display:inline-block;
+                position:static;
+                transform:none;
+                color:$body-font-color;
+                background-color:transparent;
+
+                &:hover {
+                    background-color:transparent;
+                }
+            }
+        }
+    }
 }
