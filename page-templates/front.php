@@ -44,6 +44,7 @@ get_header(); ?>
 							<p>
 							<a href="/" class="fp-intro__contact-link"><?php the_sub_field('intro_contact_mail'); ?></a>
 							<a href="/" class="fp-intro__contact-link"><?php the_sub_field('intro_contact_telefoon'); ?></a>
+							<a href="/" class="fp-intro__contact-link"><?php the_sub_field('intro_contact_telefoon_06'); ?></a>
 							<a href="<?php the_sub_field('intro_contact_contact_link'); ?>" class="fp-intro__contact-link">contact opnemen</a>
 							</p>
 						</div>
@@ -170,7 +171,7 @@ get_header(); ?>
 				<div class="row expanded collapse">
 				<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 					<?php setup_postdata($post); ?>
-					<div class="columns small-12 medium-4">
+					<div class="columns small-12 medium-6 large-4">
 						<div class="project-thema">
 							<a href="<?php the_permalink(); ?>">
 								<div class="project-thema__image-wrapper">

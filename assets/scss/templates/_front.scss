@@ -119,6 +119,7 @@
 .service {
     background-color:#eee;
     padding:rem-calc(40 20);
+    transition:all 0.3s ease-in-out;
 
     @include breakpoint(medium) {
         min-height:200px; 
@@ -140,7 +141,14 @@
     }
 
     &__text {
-        margin-bottom:0;
+        p {
+            margin-bottom:0;
+        }
+    }
+
+    &:hover {
+        background-color:$brand-red!important;
+        color:$white!important;
     }
 }
 

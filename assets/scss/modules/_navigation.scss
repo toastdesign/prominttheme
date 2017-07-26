@@ -95,7 +95,7 @@
 // Tablet and desktop menu
 .desktop-menu {
   font-family:$header-font-family;
-
+  
   // submenu arrow
   li.is-dropdown-submenu-parent {
     > a::after {
@@ -109,7 +109,7 @@
   &.menu > li > a {
     color:#202020;
     text-transform:uppercase;
-    font-size:rem-calc(15);
+    font-size:rem-calc(13);
     padding:rem-calc(10);
   }
 

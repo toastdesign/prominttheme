@@ -68,7 +68,7 @@ get_header(); ?>
                             <div class="row expanded collapse">
                             <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
                                 <?php setup_postdata($post); ?>
-                                <div class="columns small-12 medium-4">
+                                <div class="columns small-12 medium-6 large-4">
                                     <div class="project-thema">
                                         <a href="<?php the_permalink(); ?>">
                                             <div class="project-thema__image-wrapper">
