@@ -6650,7 +6650,7 @@ html.is-reveal-open body {
   padding: 2.75rem 0 2.4375rem; }
   @media print, screen and (min-width: 40em) {
     .footer {
-      padding: 3.625rem 0 3.3125rem; } }
+      padding: 3.1875rem 0 2.875rem; } }
 
 .copyright {
   padding: 2.75rem 0 2.4375rem;
@@ -7105,7 +7105,8 @@ body#tinymce {
 .flexible-content-block--project-links a {
   color: #0a0a0a; }
   .flexible-content-block--project-links a:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: #DF3128; }
 
 .flexible-content-block--project-links .row .columns {
   margin-bottom: 2rem; }
@@ -7250,6 +7251,9 @@ body#tinymce {
   .fp-intro__contact-link {
     display: block;
     color: white; }
+    .fp-intro__contact-link:hover {
+      color: white;
+      text-decoration: underline; }
 
 @media print, screen and (min-width: 40em) {
   .fp-about {
@@ -7280,7 +7284,7 @@ body#tinymce {
   transition: all 0.3s ease-in-out; }
   @media print, screen and (min-width: 40em) {
     .service {
-      min-height: 200px; } }
+      min-height: 270px; } }
   .service__inner {
     max-width: 30rem; }
   .service__title {
@@ -7298,6 +7302,7 @@ body#tinymce {
 
 .flexible-content-block--quote .quote {
   font-family: "Varela Round", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-style: italic;
   line-height: 2;
   font-size: 1.0625rem; }
   @media print, screen and (min-width: 40em) {
@@ -7320,8 +7325,8 @@ body#tinymce {
 .testimonials {
   background-position: top center;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
   padding-top: 5.625rem;
   padding-bottom: 5.625rem; }
   @media print, screen and (min-width: 40em) {

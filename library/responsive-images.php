@@ -12,7 +12,7 @@
 // Sizes are optimized and cropped for landscape aspect ratio
 // and optimized for HiDPI displays on 'small' and 'medium' screen sizes.
 add_image_size( 'featured-small', 640, 200, true ); // name, width, height, crop
-add_image_size( 'featured-medium', 1280, 400, true );
+add_image_size( 'featured-medium', 1060, 540, true );
 add_image_size( 'featured-large', 1440, 400, true );
 add_image_size( 'featured-xlarge', 1920, 400, true );
 add_image_size( 'project-thema', 480, 320, true );

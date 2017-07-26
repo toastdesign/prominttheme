@@ -57,6 +57,11 @@
     &__contact-link {
         display:block;
         color:white;
+
+        &:hover {
+            color:white;
+            text-decoration:underline;
+        }
     }
 }
 
@@ -122,7 +127,7 @@
     transition:all 0.3s ease-in-out;
 
     @include breakpoint(medium) {
-        min-height:200px; 
+        min-height:270px; 
     }
 
     &__inner {
@@ -158,6 +163,7 @@
 .flexible-content-block--quote{
     .quote {
         font-family: $header-font-family;
+        font-style:italic;
         line-height:2;
         font-size:rem-calc(17);
 
@@ -198,7 +204,7 @@
 .testimonials {
     background-position: top center;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: 100%;
     padding-top:rem-calc(90);
     padding-bottom:rem-calc(90);
 

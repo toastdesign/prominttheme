@@ -25,7 +25,7 @@
 					<div class="row small-collapse medium-uncollapse">
 						<div class="columns">
 							<?php if (has_post_thumbnail()) {
-								the_post_thumbnail();
+								the_post_thumbnail('featured-medium');
 							} ?>
 						</div>
 					</div>
