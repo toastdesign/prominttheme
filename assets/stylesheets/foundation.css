@@ -6477,8 +6477,14 @@ html.is-reveal-open body {
 .mobile-menu {
   display: none; }
 
+.top-bar-title {
+  padding-top: 0.75rem; }
+
 .site-logo {
   height: 3.125rem; }
+  @media print, screen and (min-width: 40em) {
+    .site-logo {
+      height: 3.8125rem; } }
 
 .mobile-menu,
 .mobile-off-canvas-menu {
@@ -6807,6 +6813,8 @@ body#tinymce {
   @media print, screen and (min-width: 40em) {
     .gallery .gallery-item {
       margin-bottom: 0; } }
+  .gallery .gallery-item img {
+    width: 100%; }
 
 @media print, screen and (min-width: 40em) {
   .gallery.gallery-columns-1 > .gallery-item {
@@ -7071,7 +7079,7 @@ body#tinymce {
   border-radius: 3.125rem; }
 
 .flexible-content-block {
-  margin-bottom: 2.5rem; }
+  margin-bottom: 3.5rem; }
   .flexible-content-block--margin-top {
     margin-top: 1.875rem; }
   .flexible-content-block--no-margin-bottom {
@@ -7155,6 +7163,33 @@ body#tinymce {
 .flexible-content-block--referenties .referentie-country {
   font-family: "Varela Round", "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.3125rem; }
+
+.flexible-content-block--werkwijze {
+  background-color: #DF3128;
+  padding-top: 6.25rem;
+  padding-bottom: 8.125rem;
+  color: white;
+  text-align: center; }
+  .flexible-content-block--werkwijze .intro-text {
+    margin-bottom: 5rem; }
+  .flexible-content-block--werkwijze .columns--border-right {
+    border-right: 1px solid rgba(255, 255, 255, 0.2); }
+    .flexible-content-block--werkwijze .columns--border-right:last-child {
+      border-right: 0; }
+  .flexible-content-block--werkwijze .werkwijze {
+    color: white;
+    text-align: center;
+    padding: 1.25rem 0.625rem; }
+    .flexible-content-block--werkwijze .werkwijze__icon {
+      height: 5.3125rem;
+      margin-bottom: 2.5rem; }
+    .flexible-content-block--werkwijze .werkwijze__title {
+      margin-bottom: 1.4375rem;
+      font-size: 1.4375rem; }
+    .flexible-content-block--werkwijze .werkwijze__text {
+      margin-bottom: 0;
+      line-height: 1.8;
+      font-size: 0.9375rem; }
 
 .orbit {
   height: 100%; }

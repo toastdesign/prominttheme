@@ -46,9 +46,18 @@
   display: none; // prevents repaint caused by JS hiding menu onload
 }
 
+// top bar title
+.top-bar-title {
+  padding-top:rem-calc(12);
+}
+
 // Logo
 .site-logo {
   height:rem-calc(50);
+
+  @include breakpoint(medium) {
+    height:rem-calc(61);
+  }
 }
 
 .mobile-menu,

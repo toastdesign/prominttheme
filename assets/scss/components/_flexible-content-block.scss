@@ -1,5 +1,5 @@
 .flexible-content-block {
-    margin-bottom:rem-calc(40);
+    margin-bottom:rem-calc(56);
 
     // Margin-top
     &--margin-top {
@@ -168,5 +168,54 @@
     .referentie-country {
         font-family:$header-font-family;
         font-size:rem-calc(21);
+    }
+}
+
+//--------------------------------------------------------------
+// Werkwijze block
+//--------------------------------------------------------------
+.flexible-content-block--werkwijze {
+    background-color:$brand-red;
+    padding-top:rem-calc(100);
+    padding-bottom:rem-calc(130);
+
+    color:white;
+    text-align:center;
+
+
+    .intro-text {
+        margin-bottom:rem-calc(80);
+    }
+
+    // border on columns
+    .columns--border-right {
+        border-right:1px solid rgba(white,0.2);
+
+        &:last-child {
+            border-right:0;
+        }
+    }
+    
+    // werkzijze item
+    .werkwijze {
+        color:white;
+        text-align:center;
+        padding:rem-calc(20 10);
+        
+        &__icon {
+            height:rem-calc(85);
+            margin-bottom:rem-calc(40);
+        }
+       
+        &__title {
+            margin-bottom:rem-calc(23);
+            font-size:rem-calc(23);
+        }
+
+        &__text {
+            margin-bottom:rem-calc(0);
+            line-height:1.8;
+            font-size:rem-calc(15);
+        }
     }
 }
