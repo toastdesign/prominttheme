@@ -6614,7 +6614,7 @@ html.is-reveal-open body {
 
 .main-wrap {
   position: relative; }
-  @media print, screen and (min-width: 40em) {
+  @media print, screen and (min-width: 64em) {
     .main-wrap {
       padding-top: 2.5rem; }
       .main-wrap:after {
@@ -6697,7 +6697,7 @@ body#tinymce {
 .menu-item-language.menu-item-language-current {
   display: none !important; }
 
-.menu-item-language img.iclflag {
+.menu-item-language.wpml-ls-menu-item .wpml-ls-flag {
   width: 1.625rem !important;
   height: 1.625rem !important;
   margin-right: 0; }

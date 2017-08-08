@@ -9,7 +9,7 @@
 .main-wrap {
   position:relative;
   
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     padding-top:rem-calc(40);
 
     // Grey top 

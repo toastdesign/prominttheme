@@ -26,7 +26,7 @@
 		<?php if (has_post_thumbnail()) { ?>
 		
 		<div id="featured-img" class="flexible-content-block flexible-content-block--gallery">
-			<div class="row small-collapse medium-uncollapse">
+			<div class="row small-collapse large-uncollapse">
 				<div class="columns">
 					<?php if (has_post_thumbnail()) {
 						the_post_thumbnail('featured-medium');
@@ -46,7 +46,7 @@
 						<?php if (get_sub_field( 'content_width' )) { ?>
 							<div class="columns small-12">
 						<?php } else { ?>
-							<div class="columns small-12 medium-8">
+							<div class="columns small-12 large-8">
 						<?php } ?>
 							<div class="flexible-content-block flexible-content-block--wysiwyg">
 
