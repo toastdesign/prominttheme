@@ -4,7 +4,7 @@ Template Name: Referenties
 */
 get_header(); ?>
 
-<div class="main-wrap main-wrap--no-image main-wrap--background-image" role="main" style="background-image:url(<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>);">
+<div class="main-wrap main-wrap--no-image main-wrap--background-image  main-wrap--background-image-auto-width" role="main" style="background-image:url(<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>);">
 
 <?php do_action( 'foundationpress_before_content' ); ?>
 

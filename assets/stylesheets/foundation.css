@@ -6661,6 +6661,9 @@ html.is-reveal-open body {
     background-attachment: fixed;
     -webkit-background-size: 100% 100%;
             background-size: 100%; }
+  .main-wrap--background-image-auto-width {
+    -webkit-background-size: auto auto;
+            background-size: auto; }
 
 .footer {
   background-color: #EEE;

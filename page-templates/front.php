@@ -42,9 +42,9 @@ get_header(); ?>
 						</div>
 						<div class="fp-intro__contact-box flex-child-auto">
 							<p>
-							<a href="/" class="fp-intro__contact-link"><?php the_sub_field('intro_contact_mail'); ?></a>
-							<a href="/" class="fp-intro__contact-link"><?php the_sub_field('intro_contact_telefoon'); ?></a>
-							<a href="/" class="fp-intro__contact-link"><?php the_sub_field('intro_contact_telefoon_06'); ?></a>
+							<a href="mailto:<?php the_sub_field('intro_contact_mail'); ?>" target="_blank" class="fp-intro__contact-link"><?php the_sub_field('intro_contact_mail'); ?></a>
+							<a href="tel:<?php the_sub_field('intro_contact_telefoon'); ?>" target="_blank" class="fp-intro__contact-link"><?php the_sub_field('intro_contact_telefoon'); ?></a>
+							<a href="tel:<?php the_sub_field('intro_contact_telefoon_06'); ?>" target="_blank" class="fp-intro__contact-link"><?php the_sub_field('intro_contact_telefoon_06'); ?></a>
 							<a href="<?php the_sub_field('intro_contact_contact_link'); ?>" class="fp-intro__contact-link hide">contact opnemen</a>
 							</p>
 						</div>
