@@ -9,7 +9,7 @@
     z-index:1;
     margin-bottom:rem-calc(36);
     
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
         padding:rem-calc(50);
         margin-top:rem-calc(-110);
         margin-bottom:rem-calc(36);
@@ -151,6 +151,10 @@
         }
     }
 
+    a {
+        color:inherit;
+    }
+
     &:hover {
         background-color:$brand-red!important;
         color:$white!important;
@@ -204,7 +208,7 @@
 .testimonials {
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 80%;
     padding-top:rem-calc(90);
     padding-bottom:rem-calc(90);
 

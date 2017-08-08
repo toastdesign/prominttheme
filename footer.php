@@ -13,12 +13,12 @@
 	</section>
 	<div class="container">
 	
-		<div class="footer-container" data-sticky-footer>
+		<div class="footer-container">
 			<footer class="footer">
 				<?php do_action( 'foundationpress_before_footer' ); ?>
 				
 				<div class="flex-container row align-middle align-justify">
-					<div class="columns show-for-medium">
+					<div class="columns show-for-large">
 						<?php foundationpress_bottom_bar_l(); ?>
 					</div>
 					<div class="columns shrink">

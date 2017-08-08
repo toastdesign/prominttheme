@@ -35,27 +35,29 @@ get_header(); ?>
     <?php } ?>
 
     <div class="row align-justify">
-        <div class="columns small-12 medium-3">
+        <div class="columns small-12 medium-5 large-3">
             <div class="contact-info">
                 <h2 class="contact-info__title">Adres</h2>
+                
                 <p class="contact-info__address">
+                    <a target="_blank" class="contact-info__google-link" href="<?php the_field('google_place_link'); ?>">
                     Promint Projectmanagement <br>
-                    Parkstraat 1b <br>
-                    4818 SJ Breda <br>
+                    <?php the_field('straat_en_nummer'); ?> <br>
+                    <?php the_field('postcode_en_plaats'); ?> <br>
                     Nederland
+                    </a>
                 </p>
                 <p class="contact-info__contact-links">
-                    <a href="" class="contact-info__contact-link">+31 (0)76 - 56 00 308</a>
-                    <a href="" class="contact-info__contact-link">+31 (0)6 - 51 56 74 15</a>
-                    <a href="" class="contact-info__contact-link">info@promint.nl</a>
+                    <a target="_blank" href="tel:<?php the_field('telefoonnummer'); ?>" class="contact-info__contact-link"><?php the_field('telefoonnummer'); ?></a>
+                    <a target="_blank" href="tel:<?php the_field('telefoonnummer_06'); ?>" class="contact-info__contact-link"><?php the_field('telefoonnummer_06'); ?></a>
+                    <a target="_blank" href="mailto:<?php the_field('email_adres'); ?>" class="contact-info__contact-link"><?php the_field('email_adres'); ?></a>
                 </p>
             </div>
         </div>
-        <div class="columns small-12 medium-8">
+        <div class="columns small-12 medium-7 large-8">
             <div class="contact-form-wrapper">
                 <h1 class="contact-form-wrapper__title">Contact Opnemen</h1>
                 <div class="contact-form-wrapper__content"><?php the_content();?></div>
-               
             </div>
         </div>
     </div>

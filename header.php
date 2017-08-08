@@ -25,7 +25,7 @@
 
 		<header id="main-nav-header" class="site-header sticky" role="banner"  data-sticky  data-sticky-on="small" data-options="marginTop:0;" style="width:100%; ">
 			
-			<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle() ?>>
+			<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle() ?> data-hide-for="large">
 				
 				<div class="flex-container align-middle align-justify">
 								
@@ -48,7 +48,7 @@
 						</div>
 					</div>
 					
-					<div class="top-bar-right columns shrink">
+					<div class="top-bar-right columns flex-child-auto large-flex-child-shrink">
 						<?php foundationpress_top_bar_r(); ?>
 						<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
 					</div>

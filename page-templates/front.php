@@ -24,7 +24,7 @@ get_header(); ?>
 
 </header>
 
-<div class="row small-collapse medium-uncollapse">
+<div class="row small-collapse large-uncollapse">
 	<div class="columns">
 
 		<div class="fp-intro">
@@ -101,10 +101,12 @@ get_header(); ?>
 				<div class="columns small-12 medium-6">
 
 					<div class="service flex-container align-center align-middle">
+						<a href="<?php the_sub_field('dienst_link'); ?>">
 						<div class="service__inner">
 							<h3 class="service__title"><?php the_sub_field('dienst_titel'); ?></h3>
 							<div class="service__text"><?php the_sub_field('dienst_tekst'); ?></div>
 						</div>
+						</a>
 					</div>
 
 				</div>

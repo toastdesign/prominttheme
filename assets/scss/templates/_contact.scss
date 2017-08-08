@@ -15,6 +15,18 @@
     &__contact-link {
         display:block;
         color:$brand-red;
+
+        &:hover {
+            color:$brand-red;
+            text-decoration:underline;
+        }
+    }
+
+    &__google-link {
+        color:inherit;
+        &:hover {
+            color:inherit;
+        }
     }
 }
 

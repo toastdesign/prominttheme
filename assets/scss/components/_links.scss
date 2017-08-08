@@ -6,3 +6,10 @@
 [data-whatinput="touch"] a:focus, button:focus {
   outline: none;
 }
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}

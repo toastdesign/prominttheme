@@ -104,6 +104,7 @@ $grid-column-count: 12;
 $grid-column-gutter: (
   small: 40px,
   medium: 20px,
+  large: 20px,
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -620,7 +621,7 @@ $tooltip-radius: $global-radius;
 // 37. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem 0;
+$topbar-padding: rem-calc(5) 0;
 $topbar-background: white;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: rem-calc(17) 1rem rem-calc(17) 0;

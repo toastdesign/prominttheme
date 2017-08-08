@@ -100,7 +100,7 @@
     .seperator {
         width:rem-calc(110);
         border-color:$brand-red;
-        margin:rem-calc(10) auto rem-calc(50);
+        margin:rem-calc(0) auto rem-calc(56);
         
         @include breakpoint(medium) {
             margin:rem-calc(64) auto rem-calc(90);
@@ -179,10 +179,20 @@
     padding-top:rem-calc(100);
     padding-bottom:rem-calc(130);
 
+    margin-top:rem-calc(30);
+
     color:white;
-    text-align:center;
+    
+    
+    @include breakpoint(medium) {
+        margin-top:rem-calc(60);
+    }
 
+    @include breakpoint(large) {
+        text-align:center;
+    }
 
+    
     .intro-text {
         margin-bottom:rem-calc(80);
     }
@@ -199,23 +209,44 @@
     // werkzijze item
     .werkwijze {
         color:white;
-        text-align:center;
         padding:rem-calc(20 10);
+
+        @include breakpoint(large){
+            text-align:center;
+        }
         
         &__icon {
-            height:rem-calc(85);
+            height:rem-calc(52);
             margin-bottom:rem-calc(40);
+
+            @include breakpoint(medium) {
+                height:rem-calc(85);
+                margin-bottom:rem-calc(40);
+            }
+
+            img {
+                max-height:100%;
+                width:auto;
+            }
         }
        
         &__title {
             margin-bottom:rem-calc(23);
-            font-size:rem-calc(23);
+            font-size:rem-calc(19);
+            
+            @include breakpoint(medium){
+                font-size:rem-calc(23);
+            }
         }
 
         &__text {
             margin-bottom:rem-calc(0);
             line-height:1.8;
-            font-size:rem-calc(15);
+            font-size:rem-calc(14);
+
+            @include breakpoint(medium){
+                font-size:rem-calc(15);
+            }
         }
     }
 }

@@ -1,0 +1,13 @@
+.menu-item-language {
+
+    // current language
+    &.menu-item-language-current {
+        display:none!important;
+    }
+
+    img.iclflag {
+        width:rem-calc(26)!important;
+        height:rem-calc(26)!important;
+        margin-right:0;
+    }
+}

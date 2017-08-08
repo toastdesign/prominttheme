@@ -13,31 +13,29 @@
  get_header(); ?>
 
 <?php if (has_post_thumbnail()) { ?>
-    <div class="main-wrap main-wrap--padding-bottom" role="main">
+    <div class="main-wrap" role="main">
 
 <?php } else { ?>
-    <div class="main-wrap main-wrap--no-image main-wrap--padding-bottom" role="main">
+    <div class="main-wrap main-wrap--no-image" role="main">
 <?php } ?>
 
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
 	<article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
-
-		<div class="row">
-			<div class="columns small-12">
-				<div id="featured-img" class="flexible-content-block flexible-content-block--gallery">
-					<div class="row small-collapse medium-uncollapse">
-						<div class="columns">
-							<?php if (has_post_thumbnail()) {
-								the_post_thumbnail('featured-medium');
-							} ?>
-						</div>
-					</div>
+		<?php if (has_post_thumbnail()) { ?>
+		
+		<div id="featured-img" class="flexible-content-block flexible-content-block--gallery">
+			<div class="row small-collapse medium-uncollapse">
+				<div class="columns">
+					<?php if (has_post_thumbnail()) {
+						the_post_thumbnail('featured-medium');
+					} ?>
 				</div>
 			</div>
-		</div>		
-		
+		</div>
+	
+		<?php } ?>
 		<?php if ( have_rows( 'add_content' ) ) : ?>
 			<?php while ( have_rows('add_content' ) ) : the_row(); ?>
 				
@@ -107,7 +105,7 @@
 					<?php if ( have_rows('items') ) : ?>
 						<div class="row">
 						<?php while( have_rows('items') ) : the_row(); ?>
-							<div class="columns columns--border-right">
+							<div class="columns small-12 large-4 columns--border-right">
 								<div class="werkwijze">
 									
 									<?php 
